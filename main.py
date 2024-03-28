@@ -1,32 +1,36 @@
-import Equipment, Exercises, MuscleGroup, Recommendations, TrainingDay, TrainingProgram, User
+from tabulate import tabulate
+from Exercises import Exercise
+from Equipment import Equipment
+from User import User
+from TrainingProgram import TrainingProgram
 
-from Repository import UserRepository as ur
+def main():
 
-user1 = User.User("Андрей", 20, 184, 73, "Набрать мышечную массу", "Мужской")
-user2 = User.User("Тилек", 21, 178, 82, "Сбросить лишний вес", "Мужской")
+    exercise1 = Exercise("Приседания", "Упражнение для нижних конечностей")
+    exercise2 = Exercise("Жим гантелей лежа", "Упражнение для груди")
+    equipment1 = Equipment("Гантели", "Ручные грузы")
+    equipment2 = Equipment("Брусья", "Оборудование для отжиманий")
+    user1 = User("John", 30, 1.75, 75, "Сбросить вес", "Мужчина")
 
-equipment1 = Equipment.Equipment("Беговая дорожка", "Для бега")
 
-exercise1 = Exercises.Exercises("Подтягивание", "Сгибание и разгибание рук на перекладине")
+    exercises_data = [
+        [exercise1.name, exercise1.description],
+        [exercise2.name, exercise2.description]
+    ]
+    equipment_data = [
+        [equipment1.name, equipment1.description],
+        [equipment2.name, equipment2.description]
+    ]
+    users_data = [
+        [user1.name, user1.age, user1.height, user1.weight, user1.purpose, user1.gender]
+    ]
 
-muscle1 = MuscleGroup.MuscleGroup("Предплечье", "Руки")
+    print("Упражнения:")
+    print(tabulate(exercises_data, headers=["Название", "Описание"], tablefmt="grid"))
+    print("\nОборудование:")
+    print(tabulate(equipment_data, headers=["Название", "Описание"], tablefmt="grid"))
+    print("\nПользователи:")
+    print(tabulate(users_data, headers=["Имя", "Возраст", "Рост", "Вес", "Цель", "Пол"], tablefmt="grid"))
 
-recommendation1 = Recommendations.Recommendations("Сбросить лишний вес", "Работа с меньшим весом на много повторений")
-
-trainingDay1 = TrainingDay.TrainingDay("Силовая")
-
-trainingProgram1 = TrainingProgram.TrainingProgram("Понедельник")
-
-uRep = ur.UserRepository()
-
-uRep.add(user1)
-uRep.add(user2)
-
-print(uRep.get_all())
-
-uRep.remove(user2)
-print(uRep.get_by_name("Андрей"))
-print(uRep.get_by_name("73"))
-
-print(exercise1.get_info())
-print(muscle1.get_info())
+if __name__ == "__main__":
+    main()

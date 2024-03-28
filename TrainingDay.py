@@ -1,7 +1,10 @@
+
+
 class TrainingDay:
     def __init__(self, name):
-        self.id = id
         self.name = name
 
-    def get_info(self):
-        return [self.id, self.name]
+    def __eq__(self, other):
+        if not isinstance(other, TrainingDay):
+            return False
+        return self.name == other.name

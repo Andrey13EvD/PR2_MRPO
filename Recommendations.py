@@ -1,8 +1,11 @@
+
+
 class Recommendations:
     def __init__(self, purpose, recommendations):
-        self.id = id
         self.purpose = purpose
         self.recommendations = recommendations
 
-    def get_info(self):
-        return [self.id, self.recommendations, self.purpose]
+    def __eq__(self, other):
+        if not isinstance(other, Recommendations):
+            return False
+        return (self.purpose == other.purpose) and (self.recommendations == other.recommendations)
