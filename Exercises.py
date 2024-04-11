@@ -1,8 +1,11 @@
-class Exercises:
-    def __init__(self, name, description):
-        self.id = id
-        self.name = name
-        self.description = description
 
-    def get_info(self):
-        return[self.id, self.name, self.description]
+
+from dataclasses import dataclass, field
+from typing import List
+
+
+@dataclass(frozen=True)
+class Exercise:
+    name: str
+    description: str
+    required_equipment: List[str] = field(default_factory=list)

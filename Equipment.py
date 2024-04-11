@@ -1,8 +1,6 @@
-class Equipment:
-    def __init__(self, name, description):
-        self.id = id
-        self.name = name
-        self.description = description
+from dataclasses import dataclass
 
-    def get_info(self):
-        return [self.id, self.name, self.description]
+@dataclass(frozen=True)
+class Equipment:
+    name: str
+    description: str
