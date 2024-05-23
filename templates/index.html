@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="{{ url_for('user_form') }}" method="post">
+    <label>Логин:</label>
+    <input type="text" name="login" required>
+    <label>Пол:</label>
+    <select name="gender" required>
+        <option value="male">male</option>
+        <option value="female">female</option>
+    </select>
+    <label>Пароль:</label>
+    <input type="password" name="password" required>
+    <input type="submit">
+</form>
+<div>
+    {% if response %}
+        {{ response }}
+    {% endif %}
+</div>
+</body>
+</html>
