@@ -1,0 +1,76 @@
+<data>
+	<exercises>
+		<exercise>
+			<id>1</id>
+			<name>Push Up</name>
+			<description>A common calisthenics exercise</description>
+			<repetitions>15</repetitions>
+		</exercise>
+		<exercise>
+			<id>2</id>
+			<name>Squat</name>
+			<description>A lower body exercise</description>
+			<repetitions>20</repetitions>
+		</exercise>
+		<exercise>
+			<id>1</id>
+			<name>Подтягивания</name>
+			<description>Обычное гимнастическое упражнение</description>
+			<repetitions>15</repetitions>
+		</exercise>
+		<exercise>
+			<id>2</id>
+			<name>Приседания</name>
+			<description>Упражнение на ноги</description>
+			<repetitions>20</repetitions>
+		</exercise>
+		<exercise>
+			<id>1</id>
+			<name>Подтягивания</name>
+			<description>Обычное гимнастическое упражнение</description>
+			<repetitions>15</repetitions>
+		</exercise>
+		<exercise>
+			<id>2</id>
+			<name>Приседания</name>
+			<description>Упражнение на ноги</description>
+			<repetitions>20</repetitions>
+		</exercise>
+		<exercise>
+			<id>1</id>
+			<name>Подтягивания</name>
+			<description>Обычное гимнастическое упражнение</description>
+			<repetitions>15</repetitions>
+		</exercise>
+		<exercise>
+			<id>2</id>
+			<name>Приседания</name>
+			<description>Упражнение на ноги</description>
+			<repetitions>20</repetitions>
+		</exercise>
+		<exercise>
+			<id>5</id>
+			<name>Жим лежа</name>
+			<description>Сгибание и разгибание рук со штангой со свободным весом</description>
+			<repetitions>12</repetitions>
+		</exercise>
+		<exercise>
+			<id>1</id>
+			<name>Подтягивания</name>
+			<description>Обычное гимнастическое упражнение</description>
+			<repetitions>15</repetitions>
+		</exercise>
+		<exercise>
+			<id>2</id>
+			<name>Приседания</name>
+			<description>Упражнение на ноги</description>
+			<repetitions>20</repetitions>
+		</exercise>
+		<exercise>
+			<id>5</id>
+			<name>Жим лежа1</name>
+			<description>Сгибание и разгибание рук со штангой со свободным весом</description>
+			<repetitions>12</repetitions>
+		</exercise>
+	</exercises>
+</data>

@@ -1,0 +1,64 @@
+<data>
+	<muscle_groups>
+		<muscle_group>
+			<id>1</id>
+			<name>Chest</name>
+			<category>Upper Body</category>
+		</muscle_group>
+		<muscle_group>
+			<id>2</id>
+			<name>Quadriceps</name>
+			<category>Lower Body</category>
+		</muscle_group>
+		<muscle_group>
+			<id>1</id>
+			<name>Грудные мышцы</name>
+			<category>Грудь</category>
+		</muscle_group>
+		<muscle_group>
+			<id>2</id>
+			<name>Квадрицепсы</name>
+			<category>Ноги</category>
+		</muscle_group>
+		<muscle_group>
+			<id>1</id>
+			<name>Грудные мышцы</name>
+			<category>Грудь</category>
+		</muscle_group>
+		<muscle_group>
+			<id>2</id>
+			<name>Квадрицепсы</name>
+			<category>Ноги</category>
+		</muscle_group>
+		<muscle_group>
+			<id>1</id>
+			<name>Грудные мышцы</name>
+			<category>Грудь</category>
+		</muscle_group>
+		<muscle_group>
+			<id>2</id>
+			<name>Квадрицепсы</name>
+			<category>Ноги</category>
+		</muscle_group>
+		<muscle_group>
+			<id>5</id>
+			<name>Широчайшие мышцы спины</name>
+			<category>Спина</category>
+		</muscle_group>
+		<muscle_group>
+			<id>1</id>
+			<name>Грудные мышцы</name>
+			<category>Грудь</category>
+		</muscle_group>
+		<muscle_group>
+			<id>2</id>
+			<name>Квадрицепсы</name>
+			<category>Ноги</category>
+		</muscle_group>
+		<muscle_group>
+			<id>5</id>
+			<name>Широчайшие мышцы спины1</name>
+			<category>Спина</category>
+		</muscle_group>
+	</muscle_groups>
+</data>

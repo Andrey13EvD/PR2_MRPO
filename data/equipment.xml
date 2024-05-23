@@ -1,0 +1,64 @@
+<data>
+	<equipments>
+		<equipment>
+			<id>1</id>
+			<name>Dumbbell</name>
+			<description>A short bar with weights at each end</description>
+		</equipment>
+		<equipment>
+			<id>2</id>
+			<name>Treadmill</name>
+			<description>A device for walking or running while staying in one place</description>
+		</equipment>
+		<equipment>
+			<id>1</id>
+			<name>Гантели</name>
+			<description>Короткая штанга с грузиками на каждом конце</description>
+		</equipment>
+		<equipment>
+			<id>2</id>
+			<name>Беговая дорожка</name>
+			<description>Приспособление для ходьбы или бега при нахождении на одном месте</description>
+		</equipment>
+		<equipment>
+			<id>1</id>
+			<name>Гантели</name>
+			<description>Короткая штанга с грузиками на каждом конце</description>
+		</equipment>
+		<equipment>
+			<id>2</id>
+			<name>Беговая дорожка</name>
+			<description>Приспособление для ходьбы или бега при нахождении на одном месте</description>
+		</equipment>
+		<equipment>
+			<id>1</id>
+			<name>Гантели</name>
+			<description>Короткая штанга с грузиками на каждом конце</description>
+		</equipment>
+		<equipment>
+			<id>2</id>
+			<name>Беговая дорожка</name>
+			<description>Приспособление для ходьбы или бега при нахождении на одном месте</description>
+		</equipment>
+		<equipment>
+			<id>5</id>
+			<name>Гриф</name>
+			<description>Спортивный снаряд 20кг для основных упражнений</description>
+		</equipment>
+		<equipment>
+			<id>1</id>
+			<name>Гантели</name>
+			<description>Короткая штанга с грузиками на каждом конце</description>
+		</equipment>
+		<equipment>
+			<id>2</id>
+			<name>Беговая дорожка</name>
+			<description>Приспособление для ходьбы или бега при нахождении на одном месте</description>
+		</equipment>
+		<equipment>
+			<id>5</id>
+			<name>Гриф1</name>
+			<description>Спортивный снаряд 20кг для основных упражнений</description>
+		</equipment>
+	</equipments>
+</data>

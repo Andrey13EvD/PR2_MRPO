@@ -1,0 +1,54 @@
+<data>
+	<recommendations>
+		<recommendation>
+			<id>1</id>
+			<purpose>Weight Loss</purpose>
+			<recommendations>Cardio exercises and a balanced diet</recommendations>
+		</recommendation>
+		<recommendation>
+			<id>2</id>
+			<purpose>Muscle Gain</purpose>
+			<recommendations>Strength training and high protein intake</recommendations>
+		</recommendation>
+		<recommendation>
+			<id>1</id>
+			<purpose>Снижение веса</purpose>
+			<recommendations>Кардиотренировки и сбалансированное питание</recommendations>
+		</recommendation>
+		<recommendation>
+			<id>2</id>
+			<purpose>Увеличение мышечной массы</purpose>
+			<recommendations>Силовые тренировки и высокое потребление белка</recommendations>
+		</recommendation>
+		<recommendation>
+			<id>1</id>
+			<purpose>Снижение веса</purpose>
+			<recommendations>Кардиотренировки и сбалансированное питание</recommendations>
+		</recommendation>
+		<recommendation>
+			<id>2</id>
+			<purpose>Увеличение мышечной массы</purpose>
+			<recommendations>Силовые тренировки и высокое потребление белка</recommendations>
+		</recommendation>
+		<recommendation>
+			<id>1</id>
+			<purpose>Снижение веса</purpose>
+			<recommendations>Кардиотренировки и сбалансированное питание</recommendations>
+		</recommendation>
+		<recommendation>
+			<id>2</id>
+			<purpose>Увеличение мышечной массы</purpose>
+			<recommendations>Силовые тренировки и высокое потребление белка</recommendations>
+		</recommendation>
+		<recommendation>
+			<id>1</id>
+			<purpose>Снижение веса</purpose>
+			<recommendations>Кардиотренировки и сбалансированное питание</recommendations>
+		</recommendation>
+		<recommendation>
+			<id>2</id>
+			<purpose>Увеличение мышечной массы</purpose>
+			<recommendations>Силовые тренировки и высокое потребление белка</recommendations>
+		</recommendation>
+	</recommendations>
+</data>

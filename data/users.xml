@@ -1,0 +1,112 @@
+<data>
+	<users>
+		<user>
+			<id>1</id>
+			<age>25</age>
+			<gender>Male</gender>
+			<weight>70.5</weight>
+			<height>175</height>
+			<name>John Doe</name>
+			<purpose>Muscle Gain</purpose>
+		</user>
+		<user>
+			<id>2</id>
+			<age>30</age>
+			<gender>Female</gender>
+			<weight>60.0</weight>
+			<height>165</height>
+			<name>Jane Smith</name>
+			<purpose>Weight Loss</purpose>
+		</user>
+		<user>
+			<id>1</id>
+			<age>25</age>
+			<gender>Мужчина</gender>
+			<weight>70.5</weight>
+			<height>175</height>
+			<name>Иван Иванов</name>
+			<purpose>Увеличение мышечной массы</purpose>
+		</user>
+		<user>
+			<id>2</id>
+			<age>30</age>
+			<gender>Женщина</gender>
+			<weight>60.0</weight>
+			<height>165</height>
+			<name>Анна Иванова</name>
+			<purpose>Снижение веса</purpose>
+		</user>
+		<user>
+			<id>1</id>
+			<age>25</age>
+			<gender>Мужчина</gender>
+			<weight>70.5</weight>
+			<height>175</height>
+			<name>Иван Иванов</name>
+			<purpose>Увеличение мышечной массы</purpose>
+		</user>
+		<user>
+			<id>2</id>
+			<age>30</age>
+			<gender>Женщина</gender>
+			<weight>60.0</weight>
+			<height>165</height>
+			<name>Анна Иванова</name>
+			<purpose>Снижение веса</purpose>
+		</user>
+		<user>
+			<id>1</id>
+			<age>25</age>
+			<gender>Мужчина</gender>
+			<weight>70.5</weight>
+			<height>175</height>
+			<name>Иван Иванов</name>
+			<purpose>Увеличение мышечной массы</purpose>
+		</user>
+		<user>
+			<id>2</id>
+			<age>30</age>
+			<gender>Женщина</gender>
+			<weight>60.0</weight>
+			<height>165</height>
+			<name>Анна Иванова</name>
+			<purpose>Снижение веса</purpose>
+		</user>
+		<user>
+			<id>5</id>
+			<age>21</age>
+			<gender>Мужчина</gender>
+			<weight>75</weight>
+			<height>185</height>
+			<name>Андрей</name>
+			<purpose>Набрать мышечную массу</purpose>
+		</user>
+		<user>
+			<id>1</id>
+			<age>25</age>
+			<gender>Мужчина</gender>
+			<weight>70.5</weight>
+			<height>175</height>
+			<name>Иван Иванов</name>
+			<purpose>Увеличение мышечной массы</purpose>
+		</user>
+		<user>
+			<id>2</id>
+			<age>30</age>
+			<gender>Женщина</gender>
+			<weight>60.0</weight>
+			<height>165</height>
+			<name>Анна Иванова</name>
+			<purpose>Снижение веса</purpose>
+		</user>
+		<user>
+			<id>5</id>
+			<age>21</age>
+			<gender>Мужчина</gender>
+			<weight>75</weight>
+			<height>185</height>
+			<name>Андрей1</name>
+			<purpose>Набрать мышечную массу</purpose>
+		</user>
+	</users>
+</data>
