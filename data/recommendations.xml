@@ -50,5 +50,25 @@
 			<purpose>Увеличение мышечной массы</purpose>
 			<recommendations>Силовые тренировки и высокое потребление белка</recommendations>
 		</recommendation>
+		<recommendation>
+			<id>1</id>
+			<purpose>Снижение веса</purpose>
+			<recommendations>Кардиотренировки и сбалансированное питание</recommendations>
+		</recommendation>
+		<recommendation>
+			<id>2</id>
+			<purpose>Увеличение мышечной массы</purpose>
+			<recommendations>Силовые тренировки и высокое потребление белка</recommendations>
+		</recommendation>
+		<recommendation>
+			<id>1</id>
+			<purpose>Снижение веса</purpose>
+			<recommendations>Кардиотренировки и сбалансированное питание</recommendations>
+		</recommendation>
+		<recommendation>
+			<id>2</id>
+			<purpose>Увеличение мышечной массы</purpose>
+			<recommendations>Силовые тренировки и высокое потребление белка</recommendations>
+		</recommendation>
 	</recommendations>
 </data>

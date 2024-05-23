@@ -1,0 +1,15 @@
+<training_days>
+    <training_day>
+        <id>1</id>
+        <name>Chest Day</name>
+        <day_of_week>Monday</day_of_week>
+        <training_program_id>1</training_program_id>
+    </training_day>
+    <training_day>
+        <id>2</id>
+        <name>Back Day</name>
+        <day_of_week>Wednesday</day_of_week>
+        <training_program_id>1</training_program_id>
+    </training_day>
+    <!-- Дополнительные тренировочные дни -->
+</training_days>

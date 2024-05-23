@@ -180,5 +180,77 @@
 				</exercise>
 			</exercises>
 		</program>
+		<program>
+			<id>1</id>
+			<week_day>Понедельник</week_day>
+			<exercises>
+				<exercise>
+					<id>1</id>
+					<name>Подтягивания</name>
+					<description>Обычное гимнастическое упражнение</description>
+					<repetitions>15</repetitions>
+				</exercise>
+				<exercise>
+					<id>2</id>
+					<name>Приседания</name>
+					<description>Упражнение на ноги</description>
+					<repetitions>20</repetitions>
+				</exercise>
+			</exercises>
+		</program>
+		<program>
+			<id>2</id>
+			<week_day>Среда</week_day>
+			<exercises>
+				<exercise>
+					<id>1</id>
+					<name>Подтягивания</name>
+					<description>Обычное гимнастическое упражнение</description>
+					<repetitions>15</repetitions>
+				</exercise>
+				<exercise>
+					<id>2</id>
+					<name>Приседания</name>
+					<description>Упражнение на ноги</description>
+					<repetitions>20</repetitions>
+				</exercise>
+			</exercises>
+		</program>
+		<program>
+			<id>1</id>
+			<week_day>Понедельник</week_day>
+			<exercises>
+				<exercise>
+					<id>1</id>
+					<name>Подтягивания</name>
+					<description>Обычное гимнастическое упражнение</description>
+					<repetitions>15</repetitions>
+				</exercise>
+				<exercise>
+					<id>2</id>
+					<name>Приседания</name>
+					<description>Упражнение на ноги</description>
+					<repetitions>20</repetitions>
+				</exercise>
+			</exercises>
+		</program>
+		<program>
+			<id>2</id>
+			<week_day>Среда</week_day>
+			<exercises>
+				<exercise>
+					<id>1</id>
+					<name>Подтягивания</name>
+					<description>Обычное гимнастическое упражнение</description>
+					<repetitions>15</repetitions>
+				</exercise>
+				<exercise>
+					<id>2</id>
+					<name>Приседания</name>
+					<description>Упражнение на ноги</description>
+					<repetitions>20</repetitions>
+				</exercise>
+			</exercises>
+		</program>
 	</programs>
 </data>

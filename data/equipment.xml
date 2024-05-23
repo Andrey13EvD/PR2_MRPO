@@ -60,5 +60,25 @@
 			<name>Гриф1</name>
 			<description>Спортивный снаряд 20кг для основных упражнений</description>
 		</equipment>
+		<equipment>
+			<id>1</id>
+			<name>Гантели</name>
+			<description>Короткая штанга с грузиками на каждом конце</description>
+		</equipment>
+		<equipment>
+			<id>2</id>
+			<name>Беговая дорожка</name>
+			<description>Приспособление для ходьбы или бега при нахождении на одном месте</description>
+		</equipment>
+		<equipment>
+			<id>1</id>
+			<name>Гантели</name>
+			<description>Короткая штанга с грузиками на каждом конце</description>
+		</equipment>
+		<equipment>
+			<id>2</id>
+			<name>Беговая дорожка</name>
+			<description>Приспособление для ходьбы или бега при нахождении на одном месте</description>
+		</equipment>
 	</equipments>
 </data>

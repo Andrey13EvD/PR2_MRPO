@@ -1,0 +1,17 @@
+<exercise_instances>
+    <exercise_instance>
+        <id>1</id>
+        <exercise_id>1</exercise_id>
+        <sets>3</sets>
+        <repetitions>12</repetitions>
+        <training_day_id>1</training_day_id>
+    </exercise_instance>
+    <exercise_instance>
+        <id>2</id>
+        <exercise_id>2</exercise_id>
+        <sets>4</sets>
+        <repetitions>10</repetitions>
+        <training_day_id>1</training_day_id>
+    </exercise_instance>
+    <!-- Дополнительные экземпляры упражнений -->
+</exercise_instances>

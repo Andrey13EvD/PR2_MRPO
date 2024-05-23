@@ -60,5 +60,25 @@
 			<name>Широчайшие мышцы спины1</name>
 			<category>Спина</category>
 		</muscle_group>
+		<muscle_group>
+			<id>1</id>
+			<name>Грудные мышцы</name>
+			<category>Грудь</category>
+		</muscle_group>
+		<muscle_group>
+			<id>2</id>
+			<name>Квадрицепсы</name>
+			<category>Ноги</category>
+		</muscle_group>
+		<muscle_group>
+			<id>1</id>
+			<name>Грудные мышцы</name>
+			<category>Грудь</category>
+		</muscle_group>
+		<muscle_group>
+			<id>2</id>
+			<name>Квадрицепсы</name>
+			<category>Ноги</category>
+		</muscle_group>
 	</muscle_groups>
 </data>
