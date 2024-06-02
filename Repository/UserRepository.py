@@ -23,5 +23,12 @@ class UserRepository(FakeRepository.FakeRepository):
                     return i
         return "Пользователь не найден!"
 
+    def get_by_id(self, id):
+        if self._user:
+            for i in self._user:
+                if i.id == id:
+                    return i
+        return "Пользователь не найден!"
+
 
 

@@ -1,10 +1,11 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from AbstractUnitOfWork import AbstractUoW
-from Repository.SQLAlchemyRepository import SqlAlchemyRepository
+from ..Repository.SQLAlchemyRepository import SqlAlchemyRepository
+
 
 DEFAULT_SESSION_FACTORY = sessionmaker(
-    bind=create_engine("sqlite:///emotionDiary.db")
+    bind=create_engine("sqlite:///training_diary.db")
 )
 
 

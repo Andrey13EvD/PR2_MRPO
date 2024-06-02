@@ -23,5 +23,12 @@ class ExercisesRepository(FakeRepository.FakeRepository):
                     return i
         return "Не найдено!"
 
+    def get_by_id(self, id):
+        if self._exer:
+            for i in self._exer:
+                if i.id == id:
+                    return i
+        return "Не найдено!"
+
 
 

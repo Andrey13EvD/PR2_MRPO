@@ -23,5 +23,12 @@ class RecommendationsRepository(FakeRepository.FakeRepository):
                     return i
         return "Не найдено!"
 
+    def get_by_id(self, id):
+        if self._rec:
+            for i in self._rec:
+                if i.id == id:
+                    return i
+        return "Не найдено!"
+
 
 

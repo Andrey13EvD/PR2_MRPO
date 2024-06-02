@@ -1,48 +1,93 @@
-from flask import Flask, jsonify, request, url_for, render_template
-import requests
-from UnitOfWork import SqlAlchemyUnitOfWork
-from DB.DBModels import User
-from Services.UserService import UserService
+from flask import Flask, request, jsonify, redirect, url_for
+from sqlalchemy.orm import sessionmaker
+from DB.DBModels import engine, User, Exercise, TrainingProgram
+from Services.register_user import register_user
+from Services.create_exercise_service import create_exercise
+from Services.check_user_register import CheckUserRegister
+from Repository import UserRepository
 
-app = Flask(__name__, template_folder='template')
+# Создание Flask приложения
+app = Flask(__name__)
+
+# Создание сессии
+Session = sessionmaker(bind=engine)
+session = Session()
+
+# Роут для регистрации пользователя
+from flask import render_template
+
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 
-# Настройка подключения к базе данных
-
-
-@app.route("/user/<int:user_id>")
-def get_user(user_id):
-    print(user_id)
-    uow = SqlAlchemyUnitOfWork()
-    with uow:
-        user = uow.repository.get_by_id(User, user_id)
-
-        if user is None:
-            return dict(), 404
-        return user.to_dict()
-
-
-@app.route("/user/add", methods=["POST"])
-def add_user():
-    uow = SqlAlchemyUnitOfWork()
-    uservice = UserService(uow)
-
+@app.route('/register', methods=['POST'])
+def register():
     data = request.json
+    try:
+        new_user = register_user(
+            age=data['age'],
+            gender=data['gender'],
+            weight=data['weight'],
+            height=data['height'],
+            name=data['name'],
+            purpose=data['purpose'],
+            username=data['username'],
+            password=data['password']
+        )
+        if new_user:
+            return jsonify({'message': 'User registered successfully!'}), 201
+        else:
+            return jsonify({'message': 'Username already exists.'}), 409
+    except KeyError as e:
+        return jsonify({'message': f'Missing parameter: {e}'}), 400
 
-    res = uservice.execute(data)
+# Роут для создания упражнения
+@app.route('/exercise', methods=['POST'])
+def create_exercise_route():
+    data = request.json
+    try:
+        new_exercise = create_exercise(
+            name=data['name'],
+            description=data['description'],
+            repetitions=data['repetitions'],
+            equipment_id=data.get('equipment_id'),
+            muscle_group_ids=data.get('muscle_group_ids', [])
+        )
+        if new_exercise:
+            return jsonify({'message': 'Exercise created successfully!'}), 201
+        else:
+            return jsonify({'message': 'Error creating exercise.'}), 400
+    except KeyError as e:
+        return jsonify({'message': f'Missing parameter: {e}'}), 400
 
-    return {'user': res}
+# Роут для проверки регистрации пользователя
+@app.route('/check_registration', methods=['POST'])
+def check_registration():
+    data = request.json
+    try:
+        user_id = data['user_id']
+        user_repo = UserRepository(session)
+        checker = CheckUserRegister(user_repo)
+        is_registered = checker.execute(user_id)
+        return jsonify({'is_registered': is_registered}), 200
+    except KeyError as e:
+        return jsonify({'message': f'Missing parameter: {e}'}), 400
 
+# Роут для получения всех упражнений
+@app.route('/exercises', methods=['GET'])
+def get_exercises():
+    exercises = session.query(Exercise).all()
+    exercise_list = [
+        {
+            'id': exercise.id,
+            'name': exercise.name,
+            'description': exercise.description,
+            'repetitions': exercise.repetitions
+        } for exercise in exercises
+    ]
+    return jsonify(exercise_list), 200
 
-@app.route("/user/form", methods=["GET", "POST"])
-def user_form():
-    if request.method == "POST":
-        path = "http://localhost:5000" + url_for("add_user")
-        response = requests.post(path, json=request.form)
-        return render_template("input.html", response=response.json())
-    else:
-        return render_template("input.html")
-
-
+# Запуск приложения
 if __name__ == '__main__':
     app.run(debug=True)

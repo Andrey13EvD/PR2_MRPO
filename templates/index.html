@@ -2,25 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Diary</title>
+    <script>
+        async function registerUser() {
+            const data = {
+                age: document.getElementById('age').value,
+                gender: document.getElementById('gender').value,
+                weight: document.getElementById('weight').value,
+                height: document.getElementById('height').value,
+                name: document.getElementById('name').value,
+                purpose: document.getElementById('purpose').value,
+                username: document.getElementById('username').value,
+                password: document.getElementById('password').value
+            };
+
+            const response = await fetch('/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+
+            const result = await response.json();
+            alert(result.message);
+        }
+
+        async function createExercise() {
+            const data = {
+                name: document.getElementById('exercise_name').value,
+                description: document.getElementById('exercise_description').value,
+                repetitions: document.getElementById('exercise_repetitions').value,
+                equipment_id: document.getElementById('equipment_id').value,
+                muscle_group_ids: document.getElementById('muscle_group_ids').value.split(',').map(Number)
+            };
+
+            const response = await fetch('/exercise', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+
+            const result = await response.json();
+            alert(result.message);
+        }
+    </script>
 </head>
 <body>
-<form action="{{ url_for('user_form') }}" method="post">
-    <label>Логин:</label>
-    <input type="text" name="login" required>
-    <label>Пол:</label>
-    <select name="gender" required>
-        <option value="male">male</option>
-        <option value="female">female</option>
-    </select>
-    <label>Пароль:</label>
-    <input type="password" name="password" required>
-    <input type="submit">
-</form>
-<div>
-    {% if response %}
-        {{ response }}
-    {% endif %}
-</div>
+    <h1>Дневник тренировок</h1>
+
+    <h2>Регистрация</h2>
+    <form onsubmit="event.preventDefault(); registerUser();">
+        <label for="age">Возраст:</label>
+        <input type="number" id="age" required><br>
+
+        <label for="gender">Пол:</label>
+        <input type="text" id="gender" required><br>
+
+        <label for="weight">Вес:</label>
+        <input type="number" id="weight" required><br>
+
+        <label for="height">Рост:</label>
+        <input type="number" id="height" required><br>
+
+        <label for="name">ФИО:</label>
+        <input type="text" id="name" required><br>
+
+        <label for="purpose">Цель:</label>
+        <input type="text" id="purpose" required><br>
+
+        <label for="username">Логин:</label>
+        <input type="text" id="username" required><br>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" required><br>
+
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+
+    <h2>Добавить упражнение</h2>
+    <form onsubmit="event.preventDefault(); createExercise();">
+        <label for="exercise_name">Название упражнения:</label>
+        <input type="text" id="exercise_name" required><br>
+
+        <label for="exercise_description">Описание:</label>
+        <input type="text" id="exercise_description" required><br>
+
+        <label for="exercise_repetitions">Повторения:</label>
+        <input type="number" id="exercise_repetitions" required><br>
+
+        <label for="equipment_id">ID оборудования:</label>
+        <input type="number" id="equipment_id"><br>
+
+        <label for="muscle_group_ids">Идентификаторы групп мышц (через запятую):</label>
+        <input type="text" id="muscle_group_ids"><br>
+
+        <button type="submit">Добавить упражнение</button>
+    </form>
 </body>
 </html>

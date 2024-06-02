@@ -6,4 +6,4 @@ from .Exercise import Exercise
 class TrainingProgram:
     id: int
     week_day: str
-    exercises: Optional[List['Exercise']] = field(default_factory=list)
+    exercises: List[Exercise] = field(default_factory=list)

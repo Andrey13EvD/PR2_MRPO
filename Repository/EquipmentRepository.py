@@ -23,5 +23,12 @@ class EquipmentRepository(FakeRepository.FakeRepository):
                     return i
         return "Не найдено!"
 
+    def get_by_id(self, id):
+        if self._equip:
+            for i in self._equip:
+                if i.id == id:
+                    return i
+        return "Не найдено!"
+
 
 

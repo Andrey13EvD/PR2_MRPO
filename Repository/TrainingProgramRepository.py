@@ -21,10 +21,10 @@ class TrainingProgramRepository(FakeRepository.FakeRepository):
         for tp in self._training_programs:
             if tp.id == tp_id:
                 return tp
-        return None
+        return "Не найдено!"
 
     def get_by_week_day(self, week_day):
         for tp in self._training_programs:
             if tp.week_day == week_day:
                 return tp
-        return None
+        return "Не найдено!"

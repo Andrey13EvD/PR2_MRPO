@@ -23,5 +23,12 @@ class MuscleGroupRepository(FakeRepository.FakeRepository):
                     return i
         return "Не найдено!"
 
+    def get_by_id(self, id):
+        if self._mg:
+            for i in self._mg:
+                if i.id == id:
+                    return i
+        return "Не найдено!"
+
 
 
